@@ -243,7 +243,7 @@ function create_config( )
     "lock_operator",
     "lock_username",
     "lock_tag",
-    "lock_reply",
+    "lock_links",
     "rmsg",
     "send",
     "set_type",
