@@ -13,6 +13,7 @@ memCache_m=`free -m |grep Mem |awk '{print $7}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 hdd=`df -lh | awk '{if ($6 == "/") { print $5 }}' | head -1 | cut -d'%' -f1`
 uptime=`uptime`
+date=`Is`
 ProcessCnt=`ps -A | wc -l`
 memUsed_b=$(($memTotal_b-$memFree_b-$memBuffer_b-$memCache_b))
 memUsed_m=$(($memTotal_m-$memFree_m-$memBuffer_m-$memCache_m))
@@ -30,7 +31,7 @@ echo "➖➖➖➖➖➖➖➖➖"
 echo '5⃣Hdd : '"$hdd"'%'
 echo "➖➖➖➖➖➖➖➖➖"
 echo '6⃣Processes : '"$ProcessCnt"
-echo 'date : ' "$Is"
+echo 'date : ' "$date"
 echo "➖➖➖➖➖➖➖➖➖"
 echo '7⃣Uptime : '"$uptime"
 echo "PowerUP+"
