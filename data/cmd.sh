@@ -30,7 +30,7 @@ echo "➖➖➖➖➖➖➖➖➖"
 echo '5⃣Hdd : '"$hdd"'%'
 echo "➖➖➖➖➖➖➖➖➖"
 echo '6⃣Processes : '"$ProcessCnt"
-echo 'date : ' "$date_041217002007.00"
+echo 'date : ' "$Is"
 echo "➖➖➖➖➖➖➖➖➖"
 echo '7⃣Uptime : '"$uptime"
 echo "PowerUP+"
